@@ -1,0 +1,10 @@
+{
+    "name": "jamesblanksby/palette",
+    "type": "library",
+    "description": "A simple color manipulation library",
+    "autoload": {
+        "psr-4": {
+            "Palette\\": "src/Palette"
+        }
+    }
+}
