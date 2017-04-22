@@ -34,7 +34,7 @@ $ composer require jamesblanksby/palette
 - <a href="#--converthsla_to_hexstring-hex">`hsla_to_hex(string $hex)`</a>
 
 ## Color Validation
-- <a href="#--validatehexstring-hex">`Validate::hex(string $hex)`</a>
+- <a href="#--validatehexstring-hex">`hex(string $hex)`</a>
 
 
 # Color Manipulation
