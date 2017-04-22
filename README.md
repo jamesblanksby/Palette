@@ -43,7 +43,7 @@ $ composer require jamesblanksby/palette
 Set color value globally.
 
 #### Parameters
-- `$color`: Allowed color values:
+- `$color`: Allowed color values: _(optional)_
     - Empty: will default to black `#000000`
     - Hexadecimal color: `#fff`, `#fffffff`, `fff` & `fffffff`
     - RGB(A) string: `rgb(255, 255, 255)` or `rgba(255,255, 255, 1)`
@@ -60,7 +60,7 @@ Set color value globally.
 Returns the hue component of a color.
 
 #### Parameters
-- `$color`: See `set_color()` documentation
+- `$color`: See `set_color()` documentation _(optional)_
 
 #### Returns
 - The hue component, between 0deg and 360deg
@@ -71,7 +71,7 @@ Returns the hue component of a color.
 Returns the saturation component of a color.
 
 #### Parameters
-- `$color`: See `set_color()` documentation
+- `$color`: See `set_color()` documentation _(optional)_
 
 #### Returns
 - The saturation component, between 0 and 1
@@ -82,7 +82,7 @@ Returns the saturation component of a color.
 Returns the luminosity component of a color.
 
 #### Parameters
-- `$color`: See `set_color()` documentation
+- `$color`: See `set_color()` documentation _(optional)_
 
 #### Returns
 - The luminosity component, between 0 and 1
@@ -94,7 +94,7 @@ Changes the hue of a color.
 
 #### Parameters
 - `$degrees`: The number of degrees to rotate the hue
-- `$color`: See `set_color()` documentation
+- `$color`: See `set_color()` documentation _(optional)_
 
 #### Returns
 - Hue rotated color value in the same format it was entered
@@ -106,7 +106,7 @@ Makes a color lighter.
 
 #### Parameters
 - `$value`: The amount to increase the lightness by, between 0 and 1
-- `$color`: See `set_color()` documentation
+- `$color`: See `set_color()` documentation _(optional)_
 
 #### Returns
 - Lightened color value in the same format it was entered
@@ -118,7 +118,7 @@ Makes a color darker.
 
 #### Parameters
 - `$value`: The amount to decrease the lightness by, between 0 and 1
-- `$color`: See `set_color()` documentation
+- `$color`: See `set_color()` documentation _(optional)_
 
 #### Returns
 - Darkened color value in the same format it was entered
@@ -130,7 +130,7 @@ Makes a color more saturated.
 
 #### Parameters
 - `$value`: The amount to increase the saturation by, between 0 and 1
-- `$color`: See `set_color()` documentation
+- `$color`: See `set_color()` documentation _(optional)_
 
 #### Returns
 - Saturated color value in the same format it was entered
@@ -142,7 +142,7 @@ Makes a color less saturated.
 
 #### Parameters
 - `$value`: The amount to decrease the saturation by, between 0 and 1
-- `$color`: See `set_color()` documentation
+- `$color`: See `set_color()` documentation _(optional)_
 
 #### Returns
 - Desaturated color value in the same format it was entered
@@ -153,7 +153,7 @@ Makes a color less saturated.
 Converts a color to grayscale. This is identical to `desaturate(1 [, mixed $color)`.
 
 #### Parameters
-- `$color`: See `set_color()` documentation
+- `$color`: See `set_color()` documentation _(optional)_
 
 #### Returns
 - Grayscale color value in the same format it was entered
@@ -164,7 +164,7 @@ Converts a color to grayscale. This is identical to `desaturate(1 [, mixed $colo
 Returns the complement of a color. This is identical to `hue_rotate(180 [, mixed $color)`.
 
 #### Parameters
-- `$color`: See `set_color()` documentation
+- `$color`: See `set_color()` documentation _(optional)_
 
 #### Returns
 - Complementary color value in the same format it was entered
@@ -175,7 +175,7 @@ Returns the complement of a color. This is identical to `hue_rotate(180 [, mixed
 Returns the inverse (negative) of a color.
 
 #### Parameters
-- `$color`: See `set_color()` documentation
+- `$color`: See `set_color()` documentation _(optional)_
 
 #### Returns
 - Inverse color value in the same format it was entered
