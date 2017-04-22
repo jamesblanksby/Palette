@@ -124,7 +124,7 @@ class Convert
     /**
      * Convert hsl(s) to rgba.
      *
-     * @param array $hsla hls(a) values
+     * @param array $hsla hsl(a) values
      *
      * @return array rgba values       
      */

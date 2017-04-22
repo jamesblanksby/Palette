@@ -64,7 +64,7 @@ class Palette
         }
         // hsl(a) string
         elseif (stripos($args[0], 'hsl') === 0) {
-            $format = 'hlsa';
+            $format = 'hsla';
             $hsla = self::parse_hsla_string($args[0]);
 
             // @TODO check if valid hsla

@@ -48,7 +48,7 @@ Set color value globally.
     - Hexadecimal color: `#fff`, `#fffffff`, `fff` & `fffffff`
     - RGB(A) string: `rgb(255, 255, 255)` or `rgba(255,255, 255, 1)`
     - RGB(A) comma seperated values: `Palette::set_color($r, $g, $b [, $a])`
-    - HSL(A) string: `hls(360, 100%, 100%)` or `hlsa(360, 100%, 100%, 1)`
+    - HSL(A) string: `hsl(360, 100%, 100%)` or `hsla(360, 100%, 100%, 1)`
     - <a href="https://www.w3.org/TR/css3-color/#svg-color" target="_blank">HTML color code in lowercase</a>
 
 #### Returns
