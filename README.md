@@ -12,7 +12,7 @@ $ composer require jamesblanksby/palette
 
 # API
 ## Color Manipulation
-- <a href="#set_colorcolor">`set_color([$color])`</a>
+- <a href="#--paletteset_colorcolor">`set_color([$color])`</a>
 - <a href="#--palettehuemixed-color">`hue([mixed $color])`</a>
 - <a href="#--palettesaturationmixed-color">`saturation([mixed $color])`</a>
 - <a href="#--paletteluminositymixed-color">`luminosity([mixed $color])`</a>
