@@ -113,12 +113,13 @@ class Convert
      * Convert rgb(a) to hex.
      *
      * @param array $rgba rgb(a) values
+     * @param boolean $prefix flag to set whether value should be prefixed with a hash
      *
-     * @return string returns hex string with # prefix
+     * @return string returns hex string
      */
-    public static function rgba_to_hex($rgba)
+    public static function rgba_to_hex($rgba, $prefix = true)
     {
-        return sprintf('#%02x%02x%02x', $rgba['r'], $rgba['g'], $rgba['b']);
+        return sprintf(($prefix ? '#' : '') . '%02x%02x%02x', $rgba['r'], $rgba['g'], $rgba['b']);
     }
 
     /**
@@ -165,14 +166,15 @@ class Convert
      * Convert hsl(a) to hex.
      *
      * @param array $hsla hsl(a) values
+     * @param boolean $prefix flag to set whether value should be prefixed with a hash
      *
-     * @return string returns hex string with # prefix
+     * @return string returns hex string
      */
-    public static function hsla_to_hex($hsla)
+    public static function hsla_to_hex($hsla, $prefix = true)
     {
         $rgba = self::hsla_to_rgba($hsla);
 
-        $hex = self::rgba_to_hex($rgba);
+        $hex = self::rgba_to_hex($rgba, $prefix);
 
         return $hex;
     }
