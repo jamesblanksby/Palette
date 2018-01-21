@@ -43,7 +43,7 @@ class Convert
             'r' => (hexdec($hex[0])),
             'g' => (hexdec($hex[1])),
             'b' => (hexdec($hex[2])),
-            'a' => 1,
+            'a' => (float) 1,
         ];
 
         return $rgba;
