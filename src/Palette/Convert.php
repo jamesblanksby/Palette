@@ -73,9 +73,9 @@ class Convert
         // calculate hue
         if ($min == $max) {
             $hue = 0;
-        } elseif ($r == $max) {
+        } else if ($r == $max) {
             $hue = ((60 * ($g - $b) / $diff) + 360) % 360;
-        } elseif ($g == $max) {
+        } else if ($g == $max) {
             $hue = (60 * ($b - $r) / $diff) + 120;
         } else {
             $hue = (60 * ($r - $g) / $diff) + 240;
@@ -87,9 +87,9 @@ class Convert
         // calculate saturation
         if ($lum == 0) {
             $sat = 0;
-        } elseif ($lum == 1) {
+        } else if ($lum == 1) {
             $sat = 1;
-        } elseif ($lum <= .5) {
+        } else if ($lum <= .5) {
             $sat = $diff / $add;
         } else {
             $sat = $diff / (2 - $add);
@@ -193,9 +193,9 @@ class Convert
 
         if (($h * 6) < 1) {
             return $p + ($q - $p) * $h * 6;
-        } elseif (($h * 2) < 1) {
+        } else if (($h * 2) < 1) {
             return $q;
-        } elseif (($h * 3) < 2) {
+        } else if (($h * 3) < 2) {
             return $p + ($q - $p) * ((2 / 3) - $h) * 6;
         } else {
             return $p;
