@@ -57,18 +57,12 @@ class Palette
             $format = 'rgba';
             $rgba = self::parse_rgba_string($args[0]);
 
-            // @TODO check if valid rgba
-            // https://www.w3schools.com/colors/colors_rgb.asp
-
             $hsla = Convert::rgba_to_hsla($rgba);
         }
         // hsl(a) string
         elseif (stripos($args[0], 'hsl') === 0) {
             $format = 'hsla';
             $hsla = self::parse_hsla_string($args[0]);
-
-            // @TODO check if valid hsla
-            // https://www.w3schools.com/colors/colors_hsl.asp
         }
         // html color name
         elseif (array_key_exists($args[0], ColorNames::$list)) {
