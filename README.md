@@ -29,9 +29,9 @@ $ composer require jamesblanksby/palette
 - <a href="#--converthex_to_hslastring-hex">`hex_to_hsla(string $hex)`</a>
 - <a href="#--converthex_to_rgbastring-hex">`hex_to_rgba(string $hex)`</a>
 - <a href="#--convertrgba_to_hslastring-rgba">`rgba_to_hsla(string $rgba)`</a>
-- <a href="#--convertrgba_to_hexstring-rgba">`rgba_to_hex(string $rgba)`</a>
+- <a href="#--convertrgba_to_hexstring-rgba">`rgba_to_hex(string $rgba [, boolean $prefix])`</a>
 - <a href="#--converthsla_to_rgbastring-hsla">`hsla_to_rgba(string $hsla)`</a>
-- <a href="#--converthsla_to_hexstring-hex">`hsla_to_hex(string $hex)`</a>
+- <a href="#--converthsla_to_hexstring-hex">`hsla_to_hex(string $hex [, boolean $prefix])`</a>
 
 ## Color Validation
 - <a href="#--validatehexstring-hex">`hex(string $hex)`</a>
@@ -232,7 +232,7 @@ Converts RGBA array into a HSLA array
 
 <hr>
 
-### - `Convert::rgba_to_hex(string $rgba)`
+### - `Convert::rgba_to_hex(string $rgba [, $prefix = true])`
 Converts RGBA array into a hexadecimal color
 
 #### Parameters
@@ -241,6 +241,7 @@ Converts RGBA array into a hexadecimal color
     - `g`: Green color intensity
     - `b`: Blue color intensity
     - `a`: Alpha percentage value between 0 and 1 _(optional)_
+- `$prefix`: Flag to set whether value should be prefixed with a hash _(optional)_
 
 #### Returns
 - Hexadecimal color string
@@ -266,7 +267,7 @@ Converts HSLA array into a RGBA array
 
 <hr>
 
-### - `Convert::hsla_to_hex(string $hex)`
+### - `Convert::hsla_to_hex(string $hex [, boolean $prefix = true])`
 Converts HSLA array into a hexadecimal color
 
 #### Parameters
@@ -275,6 +276,7 @@ Converts HSLA array into a hexadecimal color
     - `s`: Saturation percentage value between 0 and 1
     - `l`: Luminosity percentage value between 0 and 1
     - `a`: Alpha percentage value between 0 and 1
+- `$prefix`: Flag to set whether value should be prefixed with a hash _(optional)_
 
 #### Returns
 - Hexadecimal color string
